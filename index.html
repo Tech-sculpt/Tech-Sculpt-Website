@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSculpt - Home</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f2f2f2; /* Dark shade for the page background */
+        }
+        .header { 
+            background: #333; 
+            padding: 10px 20px; 
+            color: #fff; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .nav { 
+            display: flex; 
+            gap: 20px; 
+        }
+        .nav a { 
+            color: #fff; 
+            text-decoration: none; 
+        }
+        .logo img { 
+            height: 40px; /* Adjust the height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+        .hero { 
+            background: url('images/hero-bg.png') no-repeat center center; 
+            background-size: cover; 
+            color: #fff; 
+            padding: 100px 20px; 
+            text-align: center; 
+            position: relative; 
+        }
+        .hero h1, .hero p { 
+            background: rgba(0, 0, 0, 0.6); 
+            display: inline-block; 
+            padding: 10px 20px; 
+        }
+        .hero h1 { font-size: 48px; margin: 0; }
+        .hero p { font-size: 24px; margin: 20px 0; }
+        .hero .cta { margin-top: 30px; }
+        .cta button { 
+            padding: 15px 30px; 
+            font-size: 18px; 
+            cursor: pointer; 
+            background: #323335; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            margin: 5px; 
+        }
+        .services, .testimonials, .portfolio, .footer { 
+            padding: 50px 20px; 
+            text-align: center; 
+        }
+        .services, .portfolio {
+            background-color: #fff; /* White background for boxes */
+            border-radius: 10px; 
+            padding: 30px; 
+            margin: 20px auto; 
+            width: 80%; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+        }
+        .services h2, .testimonials h2, .portfolio h2 { 
+            font-size: 36px; 
+            margin-bottom: 20px; 
+        }
+        .services .service, .portfolio .project { 
+            display: inline-block; 
+            width: 45%; 
+            margin: 10px; 
+            text-align: left; 
+            vertical-align: top; 
+        }
+        .services .service img { 
+            width: 80px; /* Adjusted size for logos */
+            height: 80px; 
+            border-radius: 10px; 
+            margin-bottom: 15px; 
+        }
+        .portfolio img { 
+            width: 64px; 
+            height: 64px; 
+        }
+        .testimonials { 
+            background-color: #f9f9f9; 
+            border-radius: 10px; 
+            padding: 30px; 
+            margin: 20px auto; 
+            width: 80%; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+        }
+        .portfolio .project {
+            text-align: center; /* Center text and image */
+        }
+        .portfolio .project a img {
+            margin-top: 10px; /* Space between text and image */
+        }
+        .footer { 
+            background: #333; 
+            color: #fff; 
+        }
+        .footer a { 
+            color: #fff; 
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="TechSculpt Logo"> <!-- Replace with your logo file -->
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Our Work</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Transforming Ideas into Digital Solutions</h1>
+        <p>Expert Web Development, AI, and Data Solutions</p>
+        <div class="cta">
+            <button onclick="location.href='services.html'">Explore Our Services</button>
+            <button onclick="location.href='portfolio.html'">See Our Work</button>
+        </div>
+    </div>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="images/webdev.png" alt="Web Development">
+            <h3>Web Development</h3>
+            <p>We create responsive, dynamic, and user-friendly websites.</p>
+        </div>
+        <div class="service">
+            <img src="images/ml.png" alt="AI & Machine Learning">
+            <h3>AI & Machine Learning</h3>
+            <p>Custom AI solutions tailored to your business needs.</p>
+        </div>
+        <div class="service">
+            <img src="images/dbms.png" alt="Database Management">
+            <h3>Database Management</h3>
+            <p>Secure and efficient database management solutions.</p>
+        </div>
+        <div class="service">
+            <img src="images/bigdata.jpeg" alt="Big Data Management">
+            <h3>Big Data Management</h3>
+            <p>Scalable big data solutions to drive informed decisions.</p>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What Is Our Goal</h2>
+        <p>"TechSculpt transformed our online presence and boosted our sales!"</p>
+        <p>"Professional and reliable service every step of the way."</p>
+    </div>
+
+    <div class="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="project">
+            <p>Check out our GitHub repository for this innovative AI-driven application.</p>
+            <a href="https://github.com/Tech-sculpt" target="_blank">
+                <img src="images/github.jpeg" alt="GitHub Repository">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 TechSculpt | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSculpt - Contact Us</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f2f2f2; 
+        }
+        .header { 
+            background: #333; 
+            padding: 10px 20px; 
+            color: #fff; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .logo img { 
+            height: 40px; 
+            width: auto; 
+        }
+        .nav { 
+            display: flex; 
+            gap: 20px; 
+        }
+        .nav a { 
+            color: #fff; 
+            text-decoration: none; 
+        }
+        .contact, .footer { 
+            padding: 50px 20px; 
+            text-align: center; 
+        }
+        .contact h2 { 
+            font-size: 36px; 
+            margin-bottom: 20px; 
+            color: #333; 
+        }
+        .contact p { 
+            font-size: 18px; 
+            color: #555; 
+            margin-bottom: 30px; 
+        }
+        .contact-form { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px; 
+            max-width: 500px; 
+            margin: 0 auto; 
+            text-align: left; 
+        }
+        .contact-form input, .contact-form textarea { 
+            padding: 10px; 
+            font-size: 16px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+        }
+        .contact-form button { 
+            padding: 10px; 
+            font-size: 16px; 
+            background: #353638; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        .contact-form button:hover { 
+            background: #0056b3; 
+        }
+        .contact-details { 
+            margin-top: 30px; 
+            font-size: 18px; 
+            color: #555; 
+            background: #fff; 
+            border-radius: 10px; 
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            display: inline-block; 
+        }
+        .contact-details p { 
+            margin: 10px 0; 
+        }
+        .contact-details p a { 
+            color: #007bff; 
+            text-decoration: none; 
+        }
+        .contact-details p a:hover { 
+            text-decoration: underline; 
+        }
+        .footer { 
+            background: #333; 
+            color: #fff; 
+        }
+        .footer a { 
+            color: #fff; 
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="TechSculpt Logo">
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Our Work</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Get in Touch</h2>
+        <p>We're here to help you with your next project. Fill out the form below to contact us.</p>
+        <form class="contact-form" action="https://formspree.io/f/xeojljdz" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Your Phone Number">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-details">
+            <p>Alternatively, reach out to us directly:</p>
+            <p>Email: <a href="mailto:techsculpt2@gmail.com">techsculpt2@gmail.com</a></p>
+            <p>Phone: <a href="tel:+923175724162">+92-317-5724162</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 TechSculpt | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>
